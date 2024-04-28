@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(15, 15, 15);
+  color: white;
+  min-height: 100vh;
+}
+
+.material-icons {
+  padding-top: 5px;
+  align-items: center;
+  font-size: 2em;
+}
+
+.btn-primary {
+  background-color: rgb(17, 17, 17);
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+h1 {
+  font-size: 3em;
+}

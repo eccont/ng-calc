@@ -1,0 +1,144 @@
+<div class="container">
+  <div class="p-2 d-flex justify-content-center">
+    <h3 class="p-2 fs-2">Calculadora</h3>
+  </div>
+  <div class="w-5 mt-5">
+    <div class="prev-calc text-break d-flex justify-content-end fs-2">
+      {{ operacaoAnterior }}
+    </div>
+    <div class="atual-calc text-break d-flex justify-content-end fs-1">
+      {{ operacaoAtual }}
+    </div>
+  </div>
+  
+    <div class="d-flex justify-content-between">
+      <button
+        (click)="addAoVisor('CE')"
+        class="btn-danger border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        CE
+      </button>
+      <button
+        (click)="addAoVisor('C')"
+        class="btn-danger border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        C
+      </button>
+      <button
+        (click)="addAoVisor('DEL')"
+        class="btn-danger border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        DEL
+      </button>
+      <button
+        (click)="addAoVisor('/')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        /
+      </button>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button
+        (click)="addAoVisor('7')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        7
+      </button>
+      <button
+        (click)="addAoVisor('8')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        8
+      </button>
+      <button
+        (click)="addAoVisor('9')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        9
+      </button>
+      <button
+        (click)="addAoVisor('*')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        *
+      </button>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button
+        (click)="addAoVisor('4')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        4
+      </button>
+      <button
+        (click)="addAoVisor('5')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        5
+      </button>
+      <button
+        (click)="addAoVisor('6')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        6
+      </button>
+      <button
+        (click)="addAoVisor('-')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        -
+      </button>
+    </div>
+    <div class="d-flex justify-content-between">
+      <button
+        (click)="addAoVisor('1')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        1
+      </button>
+      <button
+        (click)="addAoVisor('2')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        2
+      </button>
+      <button
+        (click)="addAoVisor('3')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        3
+      </button>
+      <button
+        (click)="addAoVisor('+')"
+        class="btn-dark border border-0 rounded p-2 w-100 m-1 fs-2"
+      >
+        +
+      </button>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex w-50">
+        <button
+          (click)="addAoVisor('0')"
+          class="btn-dark border border-0 rounded p-2 m-1 fs-2 w-100"
+        >
+          0
+        </button>
+      </div>
+      <div class="d-flex justify-content-between w-50">
+        <button
+          (click)="addAoVisor('.')"
+          class="btn-dark border border-0 rounded p-2 m-1 fs-2 w-100"
+        >
+          .
+        </button>
+        <button
+          (click)="addAoVisor('=')"
+          class="btn-dark border border-0 rounded p-2 m-1 fs-2 w-100"
+        >
+          =
+        </button>
+      </div>
+    </div>
+  
+</div>
+<router-outlet />
