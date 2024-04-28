@@ -1,0 +1,33 @@
+<body class="vr">
+  <header class="mb-3 pt-4">
+    <h1 class="text-center fs-1">Atividade Avaliativa II</h1>
+  </header>
+
+  <div class="container">
+    <!-- <div class="button-container d-flex justify-content-between">
+
+      <div class="spacer"></div>
+      Espaço entre os botões
+
+    </div> -->
+    <div *ngIf="componenteAtual === 'calculadora'">
+      <app-calculadora></app-calculadora>
+    </div>
+    <div *ngIf="componenteAtual === 'sobre-mim'">
+      <app-sobre-mim></app-sobre-mim>
+    </div>
+  </div>
+
+  <footer class="pmd-footer bg-dark fixed-bottom">
+    <div
+      class="container d-flex justify-content-between pt-3 pb-3 pl-4 pr-4 mt-1"
+    >
+      <button class="btn btn-primary" (click)="exibirCalculadora()">
+        <span class="material-icons"> calculate </span>
+      </button>
+      <button class="btn btn-primary" (click)="exibirSobreMim()">
+        <span class="material-icons"> face </span>
+      </button>
+    </div>
+  </footer>
+</body>
